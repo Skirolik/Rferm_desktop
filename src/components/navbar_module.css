@@ -1,0 +1,37 @@
+/* custom-styles.css */
+
+/* Base styles for both light and dark modes */
+.NavLink-custom {
+    color: #000000;
+    /* Default to black */
+}
+
+/* Text color for dark mode */
+@media (prefers-color-scheme: dark) {
+    .NavLink-custom.dark {
+        color: #ffffff;
+        /* White */
+    }
+
+    /* Purple highlight for dark mode */
+    .NavLink-custom.dark:hover {
+        color: #9C27B0 !important;
+        /* Purple */
+        background-color: transparent !important;
+    }
+}
+
+/* Green highlight for light mode */
+@media (prefers-color-scheme: light) {
+    .NavLink-custom.light {
+        color: 'f0000';
+        /* Green */
+    }
+
+    /* Transparent background for light mode */
+    .NavLink-custom.light:hover {
+        color: #4CAF50 !important;
+        /* Green */
+        background-color: transparent !important;
+    }
+}
