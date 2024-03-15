@@ -3,6 +3,9 @@ import Common_cards from "./individual_components/Common_cards";
 import { Donut_chart } from "./individual_components/Donut_chart";
 import { Recent_activity } from "./individual_components/Recent_activity";
 import { Card, Grid, Text } from "@mantine/core";
+import BrushChart from "./individual_components/Brush_chart";
+import Area_Chart from "./individual_components/Area_Chart";
+import { grid_data } from "./individual_components/grid_data";
 
 const CccComponent = () => {
   const data = [
@@ -30,6 +33,7 @@ const CccComponent = () => {
               </Card>
             </Grid.Col>
           </Grid>
+          <Area_Chart data={grid_data} />
         </Grid.Col>
 
         <Grid.Col span={{ base: 12, md: 1, lg: 0.5 }}></Grid.Col>

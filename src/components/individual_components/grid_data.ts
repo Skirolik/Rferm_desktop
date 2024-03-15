@@ -1,4 +1,4 @@
-export const recent_data = [{ Date: '01-03-2024', value:30 },
+export const grid_data = [{ Date: '01-03-2024', value:30 },
     { Date: '02-03-2024', value: 34 },
     { Date: '03-03-2024', value: 42 },
     { Date: '04-03-2024', value: 41 },
