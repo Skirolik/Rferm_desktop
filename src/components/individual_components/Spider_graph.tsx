@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { RadarChart } from "@mantine/charts";
-import { Badge, Table } from "@mantine/core";
+import { Badge, Grid, Table } from "@mantine/core";
 
 const getRandomColor = () => {
   return "#" + Math.floor(Math.random() * 16777215).toString(16);
@@ -56,25 +56,31 @@ const Spider_graph = ({ datasets }) => {
 
   return (
     <div>
-      <RadarChart
-        h={300}
-        data={combinedData}
-        dataKey="status"
-        withPolarRadiusAxis
-        series={series}
-      />
-      <Table>
-        <Table.Tbody>
-          {legendData.map((item, index) => (
-            <Table.Tr key={index}>
-              <Table.Td>
-                <Badge color={item.color} />
-              </Table.Td>
-              <Table.Td>{item.label}</Table.Td>
-            </Table.Tr>
-          ))}
-        </Table.Tbody>
-      </Table>
+      <Grid>
+        <Grid.Col span={{ base: 12, md: 1, lg: 3 }}>
+          <Table>
+            <Table.Tbody>
+              {legendData.map((item, index) => (
+                <Table.Tr key={index}>
+                  <Table.Td>
+                    <Badge color={item.color} />
+                  </Table.Td>
+                  <Table.Td>{item.label}</Table.Td>
+                </Table.Tr>
+              ))}
+            </Table.Tbody>
+          </Table>
+        </Grid.Col>
+        <Grid.Col span={{ base: 12, md: 1, lg: 8 }}>
+          <RadarChart
+            h={300}
+            data={combinedData}
+            dataKey="status"
+            withPolarRadiusAxis
+            series={series}
+          />
+        </Grid.Col>
+      </Grid>
     </div>
   );
 };
