@@ -57,7 +57,7 @@ const Apex_Chart = ({ data }) => {
       type: "date",
       labels: {
         style: {
-          color: computedColorScheme === "dark" ? "#fff" : "000",
+          colors: computedColorScheme === "dark" ? "#fff" : "000",
         },
       },
       title: {
