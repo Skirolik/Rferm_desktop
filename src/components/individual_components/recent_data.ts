@@ -1,0 +1,13 @@
+export const recent_data = [{ Date: '1-03-2024', status: 'Fault', Area: 'Bop',pitname:'PT-0-012' },
+    { Date: '5-03-2024', status: 'Warning', Area: 'Bop',pitname:'PT-0-012' },
+    { Date: '6-03-2024', status: 'Danger', Area: 'Bop3',pitname:'PT-0-123' },
+    { Date: '8-03-2024', status: 'Warning', Area: 'Bop',pitname:'PT-0-014' },
+    { Date: '10-03-2024', status: 'Battery-low', Area: 'Bop2',pitname:'PT-0-013' },
+    { Date: '11-03-2024', status: 'Warning', Area: 'Bop2',pitname:'PT-0-018' },
+    { Date: '12-03-2024', status: 'Battery-low', Area: 'Bop2',pitname:'PT-0-012' },
+    { Date: '12-03-2024', status: 'Danger', Area: 'Bop',pitname:'PT-0-082' },
+    { Date: '13-03-2024', status: 'Fault', Area: 'Bop2',pitname:'PT-0-044' },
+    { Date: '14-03-2024', status: 'Warning', Area: 'Bop',pitname:'PT-0-069' },
+    { Date: '14-03-2024', status: 'Fault', Area: 'Bop',pitname:'PT-0-066'},
+    { Date: '14-03-2024', status: 'Fault', Area: 'Bop2',pitname:'PT-0-142' },
+]

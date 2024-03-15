@@ -7,6 +7,7 @@ import {
   Center,
   Text,
   useMantineColorScheme,
+  useComputedColorScheme,
   Avatar,
   Image,
 } from "@mantine/core";
@@ -24,6 +25,7 @@ const Navbar = ({ Onlogout }) => {
   const isLargeScreen = useMediaQuery("(min-width: 800px)");
   const username = localStorage.getItem("user");
   const navigate = useNavigate();
+  const computedColorScheme = useComputedColorScheme("light");
   const { colorScheme } = useMantineColorScheme();
 
   console.log("color", colorScheme);

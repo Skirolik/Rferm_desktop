@@ -5,10 +5,11 @@ import Settings from "../Settings";
 import Login from "../Login";
 import { Routes, Route } from "react-router-dom";
 
-const RouterSwitcher = () => {
+const RouterSwitcher = ({ back }) => {
+  console.log("color i get in router", back);
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<Home back={back} />} />
       <Route path="/details" element={<Details />} />
       <Route path="/settings" element={<Settings />} />
       <Route path="/login" element={<Login />} />
